@@ -6,8 +6,6 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -48,7 +46,7 @@ public class GarageActivity extends AppCompatActivity {
         adapter.setOnItemClickListener(new AutoAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(Auto auto) {
-                Intent intent = new Intent(GarageActivity.this, DetalleAuto.class);
+                Intent intent = new Intent(GarageActivity.this, MaintenanceActivity.class);
                 intent.putExtra("nombre", auto.getNombre());
                 intent.putExtra("tablilla", auto.getTablilla());
                 intent.putExtra("imagenBitmap", auto.getImagenBitmap()); // Bitmap

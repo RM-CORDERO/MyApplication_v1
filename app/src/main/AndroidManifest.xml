@@ -23,7 +23,7 @@
                 android:screenOrientation="portrait"
                 android:exported="false"/>
         <activity
-                android:name=".DetalleAuto"
+                android:name=".MaintenanceActivity"
                 android:screenOrientation="portrait"
                 android:exported="false"
                 android:theme="@style/Theme.MyApplication"/>

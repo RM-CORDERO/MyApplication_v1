@@ -4,16 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
-import android.view.View;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
-import pupr.capstone.myapplication.databinding.ActivityDetalleAutoBinding;
 
-public class DetalleAuto extends AppCompatActivity {
+public class MaintenanceActivity extends AppCompatActivity {
 
     ImageView imagen;
     TextView nombre, tablilla;
@@ -21,7 +14,7 @@ public class DetalleAuto extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detalle_auto);
+        setContentView(R.layout.activity_maintenance_auto);
 
         imagen = findViewById(R.id.imagenAuto);
         nombre = findViewById(R.id.nombreAuto);

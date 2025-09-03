@@ -87,4 +87,8 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
     }
+    public void goBack(View v){
+        finish();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+    }
 }
