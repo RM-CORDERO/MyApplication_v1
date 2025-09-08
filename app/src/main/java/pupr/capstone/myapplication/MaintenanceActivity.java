@@ -16,15 +16,15 @@ public class MaintenanceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maintenance_auto);
 
-        imagen = findViewById(R.id.imagenAuto);
-        nombre = findViewById(R.id.nombreAuto);
-        tablilla = findViewById(R.id.tablillaAuto);
-
-        // Obtener datos del intent
-        Intent intent = getIntent();
-        nombre.setText(intent.getStringExtra("nombre"));
-        tablilla.setText(intent.getStringExtra("tablilla"));
-        imagen.setImageResource(intent.getIntExtra("imagen", R.drawable.ic_launcher_foreground));
+//        imagen = findViewById(R.id.imagenAuto);
+//        nombre = findViewById(R.id.nombreAuto);
+//        tablilla = findViewById(R.id.tablillaAuto);
+//
+//        // Obtener datos del intent
+//        Intent intent = getIntent();
+//        nombre.setText(intent.getStringExtra("nombre"));
+//        tablilla.setText(intent.getStringExtra("tablilla"));
+//        imagen.setImageResource(intent.getIntExtra("imagen", R.drawable.ic_launcher_foreground));
     }
     }
 

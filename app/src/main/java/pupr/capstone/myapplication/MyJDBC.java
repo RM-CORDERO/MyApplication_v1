@@ -16,7 +16,7 @@ public class MyJDBC {
 
     public Connection obtenerConexion() {
 
-        ip = "192.168.0.32";
+        ip = "192.168.0.25";
         port = "3306";
         database = "Test";
         uname = "root";
