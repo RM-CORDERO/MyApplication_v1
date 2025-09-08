@@ -47,9 +47,7 @@ public class GarageActivity extends AppCompatActivity {
             @Override
             public void onItemClick(Auto auto) {
                 Intent intent = new Intent(GarageActivity.this, MaintenanceActivity.class);
-                intent.putExtra("nombre", auto.getNombre());
-                intent.putExtra("tablilla", auto.getTablilla());
-                intent.putExtra("imagenBitmap", auto.getImagenBitmap()); // Bitmap
+                intent.putExtra("marca", auto.getMarca());
                 startActivity(intent);
             }
         });
@@ -82,7 +80,7 @@ public class GarageActivity extends AppCompatActivity {
                     }
 
                     // Agregar a la lista
-                    autos.add(new Auto(nombre, tablilla, bitmap));
+                    autos.add(new Auto(marca,modelo, tablilla, bitmap));
                 }
 
 

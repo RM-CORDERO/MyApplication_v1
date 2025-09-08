@@ -30,7 +30,7 @@ public class AutoAdapter extends RecyclerView.Adapter<AutoAdapter.AutoViewHolder
     @Override
     public void onBindViewHolder(@NonNull AutoViewHolder holder, int position) {
         Auto auto = listaAutos.get(position);
-        holder.nombre.setText(auto.getNombre());
+        holder.nombre.setText(auto.getMarca() + " " + auto.getModelo());
         holder.tablilla.setText("Tablilla " + auto.getTablilla());
         holder.imagen.setImageBitmap(auto.getImagenBitmap());
 

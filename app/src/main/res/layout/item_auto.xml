@@ -20,12 +20,12 @@
             android:layout_height="wrap_content"
             android:text="Honda Civic"
             android:textStyle="bold"
-            android:gravity="center" android:textSize="10sp"/>
+            android:gravity="center" android:textSize="8sp"/>
 
     <TextView
             android:id="@+id/textTablilla"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tablilla ABC-123"
-            android:gravity="center" android:textSize="10sp"/>
+            android:gravity="center" android:textSize="8sp"/>
 </LinearLayout>
