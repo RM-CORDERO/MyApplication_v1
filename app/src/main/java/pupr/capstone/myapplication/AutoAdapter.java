@@ -26,7 +26,7 @@ public class AutoAdapter extends RecyclerView.Adapter<AutoAdapter.AutoViewHolder
     }
 
 
-
+//Informacion de Vehiculo en el Garaje
     @Override
     public void onBindViewHolder(@NonNull AutoViewHolder holder, int position) {
         Auto auto = listaAutos.get(position);
