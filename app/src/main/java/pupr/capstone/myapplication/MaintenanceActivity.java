@@ -1,5 +1,6 @@
 package pupr.capstone.myapplication;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -31,6 +32,15 @@ public class MaintenanceActivity extends AppCompatActivity {
 
         adapter = new MantenimientoAdapter(listaMantenimientos);
         recyclerView.setAdapter(adapter);
+
+//        adapter.setOnItemClickListener(new MantenimientoAdapter.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(Auto auto) {
+//                Intent intent = new Intent(MaintenanceActivity.this, MaintenanceActivity.class);
+//                intent.putExtra("marca", auto.getMarca());
+//                startActivity(intent);
+//            }
+//        });
 
         // Capturar marca pasada desde GarageActivity
         String marca = getIntent().getStringExtra("marca");
